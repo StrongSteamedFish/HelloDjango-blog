@@ -1,0 +1,23 @@
+{
+    "editor.renderWhitespace": "all",
+    "workbench.settings.useSplitJSON": true,
+    "python.linting.pylintArgs": [
+        "--disable=no-name-in-module",
+        "--disable=import-error",
+        "--disable=unused-import",
+        "--disable=unused-argument",
+        "--disable=missing-docstring",
+        "--disable=unused-variable",
+        "--disable=wrong-import-order",
+        "--disable=invalid-name",
+        "--disable=bad-whitespace",
+        "--disable=ungrouped-imports",
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.html": "html"
+    },
+    "python.pythonPath": "C:\\Users\\幸福的家\\.virtualenvs\\HelloDjango-blog-PAmIcMWa\\Scripts\\python.exe"
+}

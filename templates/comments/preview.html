@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load comments_extras %}
+
+{% block main %}
+    <!-- 传入包含错误信息的form，渲染错误提示界面 -->
+    {% show_comment_form post form %}
+{% endblock main %}

@@ -1,0 +1,14 @@
+<div class="widget widget-category">
+    <h3 class="widget-title">分类</h3>
+    <ul>
+      {% for category in category_list %}
+        <li>
+          <!-- A表数据.B表外键关联表名_set 返回的是 B表中外键关联到A表此条数据的所有数据集合的 控制器 -->
+          <!-- 这里就是category.post_set返回的是Post表中所有与category关联的外键设置值为这条category数据的的post数据控制器 -->
+          <a href="/categories/{{ category.pk }}">{{ category.name }} <span class="post-count">({{ category.post_set.count }})</span></a>
+        </li>
+      {% empty %}
+        暂无分类！
+      {% endfor %}
+    </ul>
+  </div>
