@@ -39,3 +39,5 @@ def comment(request, post_pk):
         'form':form
     }
     return render(request, 'comments/preview.html', context = context)
+
+# test
